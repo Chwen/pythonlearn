@@ -1,0 +1,50 @@
+# make chinese words can be input without  garbled 
+import sys
+reload( sys )
+sys.setdefaultencoding('utf-8')
+
+
+# get chrome driver [1] [2]
+from selenium import webdriver
+from selenium.webdriver.common.keys import Keys
+
+chromedriver = "C:\Program Files (x86)\Google\Chrome\Application\chromedriver.exe"  
+os.environ["webdriver.chrome.driver"] = chromedriver
+driver = webdriver.Chrome(chromedriver)
+
+# use driver to get elem on web page: [3]
+driver.find_element_by_id
+driver.find_element_by_name
+driver.find_element_by_xpath
+driver.find_element_by_link_text
+driver.find_element_by_partial_link_text
+driver.find_element_by_tag_name
+driver.find_element_by_class_name
+driver.find_element_by_css_selector
+
+# To find multiple elements (these methods will return a list):
+driver.find_elements_by_name
+driver.find_elements_by_xpath
+driver.find_elements_by_link_text
+driver.find_elements_by_partial_link_text
+driver.find_elements_by_tag_name
+driver.find_elements_by_class_name
+driver.find_elements_by_css_selector
+
+
+
+reference：
+[1] in order to use selenium, first download selenium with the following command (on mac or linux):
+    pip install selenium
+  On windows, should find pip here:  C:\Python27\Scripts\pip.exe , or use the following command 
+    C:\Python27\Scripts\pip install selenium
+    
+
+[2] in order use chromedriver,should download chromedriver.exe to local path: C:\Program Files (x86)\Google\Chrome\Application\
+download chromedriver: https://sites.google.com/a/chromium.org/chromedriver/downloads
+more infos : http://selenium-python.readthedocs.io/faq.html#how-to-use-chromedriver
+
+[3] more infos should check this:
+http://selenium-python.readthedocs.io/locating-elements.html
+
+[4] http://blog.csdn.net/eastmount/article/details/47799865
