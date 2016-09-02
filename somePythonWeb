@@ -40,7 +40,7 @@ reference：
     C:\Python27\Scripts\pip install selenium
     
 
-[2] in order use chromedriver,should download chromedriver.exe to local path: C:\Program Files (x86)\Google\Chrome\Application\
+[2] in order to use chromedriver,should download chromedriver.exe to local path: C:\Program Files (x86)\Google\Chrome\Application\
 download chromedriver: https://sites.google.com/a/chromium.org/chromedriver/downloads
 more infos : http://selenium-python.readthedocs.io/faq.html#how-to-use-chromedriver
 
